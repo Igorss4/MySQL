@@ -16,5 +16,5 @@ select * from tb_kanto; -- o * é para ver tudo
 insert into tb_kanto(nome, tipo, ataque) values ("Bulbasaur","Planta-Veneno", 21); -- insere os valoresss
 
 alter table tb_kanto add defesa int;
-insert into tb_kanto(defesa) values (18);
+insert into tb_kanto(defesa) values (19);
 select * from tb_kanto;

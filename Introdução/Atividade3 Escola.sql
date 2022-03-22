@@ -38,5 +38,5 @@ update tb_estudantes set nome="Jubileu", nchamada = 20,
 nota = 5, falta = 8
 where id=4;
 
-select * from tb_estudantes
+select * from tb_estudantes;
 

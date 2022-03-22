@@ -6,7 +6,7 @@ create table tb_funcionaries(
 id bigint auto_increment,
 nome varchar(255),
 genero varchar(255),
-salario decimal(5.2),
+salario decimal(5,2),
 funcao varchar(255),
 ferias boolean,
 primary key (id)
@@ -20,7 +20,7 @@ values("Katarina","Masculino",2144.12,"Estagiario",false);
 insert into tb_funcionaries(nome,genero,salario,funcao,ferias)
 values("Sophie","Feminino",3655.10,"Dev Junior",false);
 insert into tb_funcionaries(nome,genero,salario,funcao,ferias)
-values("Ravena","Neutro",1985.36,"Estagiarie",false);
+values("Ravena","Neutro",1985.46,"Estagiarie",false);
 insert into tb_funcionaries(nome,genero,salario,funcao,ferias)
 values("Carlos","Masculino",5122.21,"Dev Pleno",true);
 

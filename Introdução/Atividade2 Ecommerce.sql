@@ -34,7 +34,7 @@ select * from tb_estoque where preco >500;
 select * from tb_estoque where preco <500;
 
 update tb_estoque set nome="InBeleze Packet", quantidade = 10,
-preco = 788.55, avaliacao = "4.4 de 5 Estrelas"
+preco = 787.55, avaliacao = "4.4 de 5 Estrelas"
 where id=5;
 
 select * from tb_estoque;
