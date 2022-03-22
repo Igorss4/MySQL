@@ -33,28 +33,28 @@ VALUES (FALSE,"Verão",TRUE);
 SELECT * FROM tb_categoria;
 
 INSERT INTO tb_produto(nome,tipo,preco,quantidade,promocao,categoria_id)
-VALUES("Maçã","Fruta",6.7,8,TRUE,1);
+VALUES("Maçã","Gala",6.7,8,TRUE,2);
 INSERT INTO tb_produto(nome,tipo,preco,quantidade,promocao,categoria_id)
-VALUES("Banana","Fruta",6.5,8,TRUE,1);
+VALUES("Banana","Terra",8.5,12,TRUE,3);
 INSERT INTO tb_produto(nome,tipo,preco,quantidade,promocao,categoria_id)
-VALUES("Pera","Fruta",6.5,8,TRUE,1);
+VALUES("Pera","Willians",10.3,9,TRUE,1);
 INSERT INTO tb_produto(nome,tipo,preco,quantidade,promocao,categoria_id)
-VALUES("Cereja","Fruta",6.5,8,TRUE,1);
+VALUES("Cereja","Benton",22,6,TRUE,2);
 INSERT INTO tb_produto(nome,tipo,preco,quantidade,promocao,categoria_id)
-VALUES("Uva","Fruta",6.5,8,TRUE,1);
+VALUES("Uva","Merlot",16.5,12,TRUE,1);
 INSERT INTO tb_produto(nome,tipo,preco,quantidade,promocao,categoria_id)
-VALUES("Abacaxi","Fruta",6.5,8,TRUE,1);
+VALUES("Abacaxi","Ajubá",11.5,7,TRUE,2);
 INSERT INTO tb_produto(nome,tipo,preco,quantidade,promocao,categoria_id)
-VALUES("Melancia","Fruta",6.5,8,TRUE,1);
+VALUES("Melancia","Forrageira",9.9,2,TRUE,5);
 INSERT INTO tb_produto(nome,tipo,preco,quantidade,promocao,categoria_id)
-VALUES("Tomate","Fruta",6.5,8,TRUE,1);
+VALUES("Tomate","Carmem",13.4,10,TRUE,4);
 SELECT * FROM tb_produto;
 
 SELECT * FROM tb_produto WHERE preco > 50.0;
 SELECT * FROM tb_produto WHERE preco BETWEEN 3.0 AND 60.0;
-SELECT * FROM tb_produto WHERE nome LIKE "%b%";
+SELECT * FROM tb_produto WHERE nome LIKE "%c%";
 
 SELECT * FROM tb_produto
 INNER JOIN tb_categoria ON tb_produto.categoria_id = tb_categoria.id;
 
-SELECT * FROM tb_produto WHERE categoria_id = 2;
+SELECT * FROM tb_produto WHERE categoria_id = 5;
